@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    font-family: "Raleway", Arial, sans-serif
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    padding-top: 100px;
+    
+}
+
+nav {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 20px 25px 25px -17px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+    padding: 10px;
+    transition: background-color 0.15s;
+}
+
+a:hover {
+    background-color: rgb(212, 211, 211);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.first-column img,
+.second-column img {
+    width: 100%;
+}
+
+.adjustment {
+    margin-top: -3px;
+}
+
+
+
+/* About Section */
+
+#about-section {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.head {
+    margin-bottom: 20px;
+}
+
+.image-section {
+    margin-bottom: 20px;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.image-section img {
+    width: 100%;
+}
+
+.description {
+    font-size: 16px;
+    color: rgb(85, 84, 84);
+}
+
+.contact {
+    font-size: 22px;
+    color: red;
+}
+
+.form label {
+    font-weight: bold;
+}
+
+.form input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 8px;
+    font-size: 17px;
+    border: 1px solid rgb(180, 178, 178);
+    border-radius: 6px;
+}
+
+.submit-btn {
+    background-color: rgb(104, 103, 103);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.15s;
+}
+
+.submit-btn:hover {
+    background-color: rgba(104, 103, 103, 0.3);
+    color: black;
+}
+
+footer {
+    display: grid;
+    font-weight: bold;
+    font-size: 18px;
+    place-items: center;
+    margin: 20px;
+    color: rgb(145, 143, 143)
+}
+
+/*Screen Sizes*/
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
